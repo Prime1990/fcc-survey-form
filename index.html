@@ -50,22 +50,26 @@
             <option>5 Stars</option>
           </select>
         </div>
-        <fieldset>
-          <legend>Gender</legend>
-          <input type="radio" name="gender" value="male"> Male
-          <input type="radio" name="gender" value="female"> Female
-        </fieldset>
-        <fieldset>
+        <div class="radiobox">
+          <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+          </fieldset>
+        </div>
+        <fieldset class="checkbox">
           <legend>Hobbies</legend>
           <input type="checkbox" name="hobby1" value="reading"> Reading books
+          <br>
           <input type="checkbox" name="hobby2" value="movies"> Watching movies
+          <br>
           <input type="checkbox" name="hobby3" value="sports"> Doing sports
         </fieldset>
         <div class="survey-pair">
           <div class="div-label">
             <label for="comments" id="comments-label">Comments</label>
           </div>
-          <textarea id="comments" placeholder="put additional comments here"></textarea>
+          <textarea id="comments" placeholder="put additional comments here" class="input-field"></textarea>
         </div>
         <p>Fields marked with * are required.</p>
         <input id="submit" type="submit" value="Submit">
