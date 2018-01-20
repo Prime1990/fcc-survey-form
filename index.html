@@ -32,13 +32,45 @@ INSTRUCTIONS:
 <html>
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
     <title>FCC Project Survey Form</title>
   </head>
   <body>
     <header>
+      <h1 id="title">Survey Form</h1>
     </header>
     <main>
+      <p id="description">Here will be some information about this survey!</p>
+      <form id="survey-form">
+        <label for="name" id="name-label">Name*</label>
+        <input id="name" type="text" placeholder="Enter your name"required>
+        <label for="email" id="email-label">Email*</label>
+        <input id="email" type="email" placeholder="Enter a valid email address"required>
+        <label for="number" id ="number-label">Number</label>
+        <input id="number" type="number" min="0" max="999999999999" placeholder="Enter a telephone number">
+        <label for="dropdown" id="dropdown-label">Dropdown</label>
+        <select id="dropdown">
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+        </select>
+        <fieldset>
+          <legend>Gender</legend>
+          <input type="radio" name="gender" value="male"> Male
+          <input type="radio" name="gender" value="female"> Female
+        </fieldset>
+        <fieldset>
+          <legend>Hobbies</legend>
+          <input type="checkbox" name="hobby1" value="reading"> Reading books
+          <input type="checkbox" name="hobby2" value="movies"> Watching movies
+          <input type="checkbox" name="hobby3" value="sports"> Doing sports
+        </fieldset>
+        <label for="comments" id="comments-label">Comments</label>
+        <textarea id="comments" placeholder="put additional comments here"></textarea>
+        <p>Fields marked with * are required.</p>
+        <input id="submit" type="submit" value="Submit">
+      </form>
     </main>
     <footer>
     </footer>
